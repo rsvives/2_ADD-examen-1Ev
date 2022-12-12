@@ -1,0 +1,9 @@
+DROP FUNCTION IF EXISTS hacerPedido;
+CREATE FUNCTION IF NOT EXISTS hacerPedido(id INT)RETURNS VARCHAR(50)
+BEGIN
+DECLARE stock INT;
+DECLARE resultado  VARCHAR(50);
+SET stock = (SELECT productos.unidadesEnExistencia FROM productos WHERE productos.id = id);
+SET resultado = IF(@stock <=10,'Hacer Pedido', 'Stock suficiente');
+RETURN resultado;
+END;

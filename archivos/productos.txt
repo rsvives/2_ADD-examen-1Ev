@@ -1,0 +1,12 @@
+(id int primary key auto_increment not null,nombreProducto varchar(200),precioUnidad float,unidadesEnExistencia int)
+id,nombreProducto,precioUnidad,unidadesEnExistencia
+1,Té Dharamsala,18.00,39
+2,Cerveza tibetana Barley,19.00,17
+3,Sirope de regaliz,10.00,13
+4,Especias Cajun del chef Anton,22.00,53
+5,Mezcla Gumbo del chef Anton,21.35,0
+6,Mermelada de grosellas de la abuela,25.00,120
+7,Peras secas orgánicas del tío Bob,30.00,15
+8,Salsa de arándanos Northwoods,40.00,6
+9,Buey Mishi Kobe,97.00,29
+10,Pez espada,31.00,31
